@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+
+
+
+
+
+#NavbarPage {
+  /* color:white */
+  height: 50px;
+  background-color: #1f1046;
+}
+
+
+
+
+
+
+/* styles/globals.css */
+
+#NavbarPage {
+  display: flex; /* Aligns items horizontally */
+  justify-content: space-around; /* Optional, evenly distributes space */
+}
+#NavbarPage{
+  display: flex;             /* Flexbox use karenge */
+  /* justify-content: center;   Horizontally center karega */
+  align-items: center;       
+  height: 50px;   
+  color:white;       
+   
+}
+.logo{
+  font-size: 34px;
+  font-weight: bold;
+  text-decoration: none;
+  color:  #f08804;;
+  margin-right: 20px;
+}
